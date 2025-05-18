@@ -1,0 +1,2 @@
+export {TodoContext, TodoProvider, useTodo} from "./TodoContext"
+// By centralizing the context in one file, we can import and reuse it in any component that needs it. No need to duplicate context setup in multiple places.
