@@ -1,6 +1,6 @@
 // Import the configuration file that contains the Appwrite URL and Project ID
 // These values are usually stored in a separate config file for security and reusability
-import conf from "../conf.js";
+import conf from "../conf/conf.js";
 
 // Import necessary classes from the Appwrite SDK
 // - Client: to initialize and configure Appwrite
@@ -96,8 +96,8 @@ export class AuthService {
 
 // Create a single (singleton) instance of the AuthService class
 // This way, you don’t need to create multiple instances across your app
-const AuthService = new AuthService();
+const authService = new AuthService();
 
 // Export the instance as the default export
 // So you can import and use it like `import AuthService from "./authService"`
-export default AuthService;
+export default authService;
